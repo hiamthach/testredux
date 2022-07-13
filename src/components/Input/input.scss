@@ -1,0 +1,32 @@
+@use '../../styles/' as *;
+
+.input {
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+        padding: 6px 0;
+        border: none;
+        outline: none;
+        font-family: $font-family;
+        color: $black-color;
+    }
+    &-btns {
+        display: flex;
+        gap: 12px;
+        margin-right: 12px;
+        &__check{
+            cursor: pointer;
+            i {
+                color: $green-color;
+            }
+        }
+        &__cancel {
+            cursor: pointer;
+            i {
+                color: $red-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@use '../../styles/' as *;
+
+.main {
+    width: 376px;
+    // min-height: 480px;
+    background-color: $white-color;
+    padding: 70px 30px;
+    margin: 20px auto;
+    text-align: center;
+    &-ava {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+    }
+    h1 {
+        font-family: $second-font-family;
+        color: $black-color;
+        font-size: 22px;
+        margin-top: 24px;
+        line-height: 1.2;
+    }
+    h6 {
+        font-family: $second-font-family;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 20px auto 50px;
+    }
+    &-todo__item{
+        position: relative;
+        &::after{
+            content: '';
+            width: calc(100% - 40px);
+            height: 1.8px;
+            background-color: $light-grey-color;
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+        }
+        
+        &:first-child{
+            border-top: none;
+        }
+    }
+    &-button{
+        width: 100%;
+        // justify-self: flex-end;
+    }
+}
